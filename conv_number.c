@@ -66,7 +66,7 @@ int print_hex(va_list ap, params_t *params)
 	else
 		l = (unsigned int)va_arg(ap, unsigned int);
 
-	str = convert(l, 16, CONV_UNSIGNED | CONVERT_LOWER, params);
+	str = convert(l, 16, CONV_UNSIGNED | CONV_LOWER, params);
 	if (params->hashtag_flag && l)
 	{
 		*--str = 'x';
